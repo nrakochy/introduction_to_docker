@@ -1,4 +1,4 @@
-Why does Docker matter? What problems does it answer?
+##Why does Docker matter? What problems does it answer?
 
 According to the [docs](https://www.docker.com/whatisdocker)(two that are most compelling in my mind):
 
@@ -20,20 +20,21 @@ According to the [docs](https://www.docker.com/whatisdocker)(two that are most c
       “Stop wasting hours trying to setup developer environments, spin up new instances and make copies of production code to run locally.
       With Docker, you can easily take copies of your live environment and run on any new endpoint running Docker.”
 
-Other benefits
+##Other benefits
 
     Multiple containers using the same OS resources- Instead of virtualizing hardware, the run as a user of the LXC.
     Can be used in most DevOps applications: Ansible, Puppet, Chef, etc.
 
-Overview
+##Overview
 
-Key Terms
+##Key Terms
+
     Images
     Dockerhub
 
-Demo deploy
+##Demo deploy
 
-Constraints
+##Constraints
 
     Cannot use multiple OS or kernels
     Security is always a concern for immature trends- Key strength also its weakness: you are talking directly to the kernel, and major kernel sub-systems are not namespaced
@@ -41,14 +42,14 @@ Constraints
         https://opensource.com/business/14/9/security-for-docker
 
 
-Quotes:
+##Quotes:
     [Ben Lloyd Pearson](http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/)
     “Docker makes it possible to set up local development environments that are exactly like a live server,
     run multiple development environments from the same host that each have unique software, operating systems, and configurations,
     test projects on new or different servers, and allow anyone to work on the same project with the exact same settings, regardless of the local host environment.”
 
 
-Sources:
+##Sources:
 
     https://www.docker.com/whatisdocker
     http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/
