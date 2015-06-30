@@ -26,24 +26,30 @@ Not from the docs
 
     Multiple containers using the same OS resources- Instead of virtualizing hardware, the run as a user of the LXC.
     Can be used in most DevOps applications: Ansible, Puppet, Chef, etc.
+    Version control, system edition
 
 ##Overview
 
 ###Key Terms
 
     Dockerfile
-    Images
+    Images- Static & Dynamic
     Dockerhub
+    Docker Compose
 
 ###Demo
+#### A single instance
+#### Multi-container
 
 ###Constraints
 
 * Cannot use multiple OS or kernels
-* Security is always a concern for immature tech 
-    * Key strength also its weakness: you are talking directly to the kernel, and major kernel sub-systems are not  
-    * Resources like [Red Hat](https://opensource.com/business/14/9/security-for-docker), which provide registry of certified docker formatted container images
-    * Docker also released [Docker Trusted Registry](https://blog.docker.com/2015/06/docker-ready-for-production/)
+* Security is always a concern for immature tech
+    * From a security standpoint, “containers do not contain” [source](https://opensource.com/business/14/9/security-for-docker).
+      Just like any software that you install on your computer, you need to trust the author.
+    * Key strength also its weakness: you are talking directly to the kernel,
+      and major kernel sub-systems are not namespaced.
+    * Docker recently released [Docker Trusted Registry](https://blog.docker.com/2015/06/docker-ready-for-production/)
 
 ### Open Containers Project
 [Open Containers Project under the auspices of the Linux Foundation](http://www.opencontainers.org/)
