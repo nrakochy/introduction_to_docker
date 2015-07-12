@@ -24,7 +24,7 @@ According to the [docs](https://www.docker.com/whatisdocker)(two most compelling
 ###Other benefits
 Not from the docs
 
-    Multiple containers using the same OS resources- Instead of virtualizing hardware, the run as a user of the LXC.
+    Multiple containers using the same OS resources- Instead of virtualizing hardware, the run as a user of the libcontainer.
     Can be used in most DevOps applications: Ansible, Puppet, Chef, etc.
     Version control, system edition
 
