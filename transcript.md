@@ -119,7 +119,9 @@ You start a container, and it shares the operating
 system, so that all you need is the code and the instruction on how to run the code.
 There's only one computer in there, which makes it make significantly more lightweight.
 
-So instead of a traditional VM, you are using an instance of Linux.
+So instead of a traditional VM, you are using an instance of Linux. This cause some confusion for me, so you want
+to note it. As of July 2015, Docker only runs on Linux! You can figure out Boot2Docker later once you get this.
+
 If you are comparing it to a VM, you can spin up 10 containers with better performance on your machine than a couple VMs.
 
 Here's where I want to circle back to the key insight as it relates to `DevOps` and teamwork. Ready for it?
@@ -143,6 +145,7 @@ in production. So the dev is not configuring it. The dev is just brought out to 
 Docker can take this and pull it into the local development or testing environment.
 
 ##Constraints
+* Replicating a production environment on a laptop can lead to weird errors due to insufficient hardware.
 * Security is always a concern for immature tech
     * From a security standpoint, “containers do not contain” [source](https://opensource.com/business/14/9/security-for-docker).
       Just like any software that you install on your computer, you need to trust the author.
